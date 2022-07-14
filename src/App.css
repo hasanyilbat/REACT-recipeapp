@@ -32,6 +32,8 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 2rem;
+  background-color: rgb(73, 113, 73) !important;
+  padding: 1rem;
 }
 .submit-Container button {
   display: block;
@@ -90,18 +92,20 @@
   justify-content: center;
   align-items: center;
   padding: 3rem;
+  background-color: rgb(153, 246, 135);
 }
 
 .about-me img {
-  width: 350px;
+  width: 309px;
   margin-bottom: 2rem;
 }
 
 .about-info {
   text-align: center;
   width: 50rem;
-  border: 2px solid white;
+  border: 5px solid white;
   font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .navbar {
@@ -117,4 +121,10 @@
 .card img {
   background-position: center center;
   background-size: cover;
+}
+
+.card-container {
+  padding: 1rem;
+  background-color: rgb(124, 216, 124) !important;
+  height: 69.85vh;
 }

@@ -3,6 +3,7 @@ import Nav from "../../components/navbar/Nav";
 import RecipeCard from "./RecipeCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Loading from "../../components/Loading";
 const Home = () => {
   const APP_KEY = "42ec21d10b48b70179a2d724f7bcfb4d";
   const APP_ID = "2e997a7c";
@@ -10,6 +11,7 @@ const Home = () => {
   const [data, setData] = useState("");
   const [query, setQuery] = useState(" ");
   const [meal, setMeal] = useState(" ");
+  const [loading, setLoading] = useState(true);
 
   const handleSubmit = (e) => {
     console.log(query);
@@ -17,6 +19,10 @@ const Home = () => {
     e.preventDefault();
     getDataFromApi();
   };
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
 
   const getDataFromApi = async () => {
     const dataFromApi = await axios.get(
@@ -27,9 +33,9 @@ const Home = () => {
 
   console.log(data);
   return (
-    <div>
+    <div style={{ backgroundColor: "rgb(124, 216, 124)" }}>
       <Nav />
-      <h1 className="text-center mt-4">Food App</h1>
+      <h1 className="text-center mt-4 ">Food App</h1>
       <div className="submit-Container">
         <form className="homeSubmit" onSubmit={handleSubmit}>
           <div className="form-group">
@@ -40,6 +46,7 @@ const Home = () => {
               placeholder="Meal"
               onChange={(e) => setQuery(e.target.value)}
               value={query}
+              style={{ width: "10rem" }}
             />
           </div>
           <button type="submit" className="btn btn-primary">
@@ -59,9 +66,10 @@ const Home = () => {
           </select>
         </form>
       </div>
-      <div className="d-flex gap-4 flex-row flex-wrap justify-content-center mt-5">
+      <div className="d-flex gap-4 flex-row flex-wrap justify-content-center p-5 card-container">
         {data && data.map((food) => <RecipeCard data={food} />)}
       </div>
+      <Loading />
     </div>
   );
 };

@@ -13,7 +13,7 @@ const Form = () => {
           </label>
           <input
             type="email"
-            class="form-control"
+            class="form-control mb-2"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter email"
