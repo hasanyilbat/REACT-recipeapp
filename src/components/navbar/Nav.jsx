@@ -8,16 +8,16 @@ const Nav = () => {
     <div>
       <nav className="navbar navbar-light bg-light d-flex justify-content-between">
         <div className="navbar-brand">
-          <Link to="#">HASAN RECIPE</Link>
+          <Link to="/home">HASAN RECIPE</Link>
         </div>
         <div>
-          <NavLink to="#" className="navbar-brand">
+          <NavLink to="/about" className="navbar-brand">
             ABOUT
           </NavLink>
           <a className="navbar-brand" href="https://github.com/hasanyilbat">
             GITHUP
           </a>
-          <Link to="#" className="navbar-brand">
+          <Link to="/" className="navbar-brand">
             LOGOUT
           </Link>
         </div>

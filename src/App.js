@@ -5,9 +5,11 @@ import AppRouter from "./router/AppRouter";
 
 function App() {
   return (
-    <BrowserRouter>
-      <AppRouter />
-    </BrowserRouter>
+    <div className="font">
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
+    </div>
   );
 }
 
