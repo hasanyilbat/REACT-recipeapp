@@ -7,31 +7,31 @@ const Form = () => {
   return (
     <div className="d-flex justify-content-center align-items-center">
       <form className="w-75 mt-2 " onSubmit={() => navigate("/home")}>
-        <div class="form-group text-center">
-          <label className="display-6  mb-2" for="exampleInputEmail1">
+        <div className="form-group text-center">
+          <label className="display-6  mb-2" htmlFor="exampleInputEmail1">
             Email address
           </label>
           <input
             type="email"
-            class="form-control mb-2"
+            className="form-control mb-2"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter email"
           />
         </div>
-        <div class="form-group text-center">
+        <div className="form-group text-center">
           <label className="display-6 mb-2" for="exampleInputPassword1">
             Password
           </label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             id="exampleInputPassword1"
             placeholder="Password"
           />
         </div>
 
-        <button type="submit" class="btn btn-primary d-block mx-auto mt-4">
+        <button type="submit" className="btn btn-primary d-block mx-auto mt-4">
           Submit
         </button>
       </form>

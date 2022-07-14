@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../../components/navbar/Nav";
 import RecipeCard from "./RecipeCard";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Loading from "../../components/Loading";
 const Home = () => {
@@ -11,7 +11,6 @@ const Home = () => {
   const [data, setData] = useState("");
   const [query, setQuery] = useState(" ");
   const [meal, setMeal] = useState(" ");
-  const [loading, setLoading] = useState(true);
 
   const handleSubmit = (e) => {
     console.log(query);
@@ -19,10 +18,6 @@ const Home = () => {
     e.preventDefault();
     getDataFromApi();
   };
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
 
   const getDataFromApi = async () => {
     const dataFromApi = await axios.get(
@@ -69,7 +64,6 @@ const Home = () => {
       <div className="d-flex gap-4 flex-row flex-wrap justify-content-center p-5 card-container">
         {data && data.map((food) => <RecipeCard data={food} />)}
       </div>
-      <Loading />
     </div>
   );
 };

@@ -61,7 +61,7 @@
   /* border: 2px solid red; */
 }
 .food-Recipe-Info {
-  height: 64vh;
+  height: 61.9vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -84,6 +84,7 @@
 
 .recipe {
   font-size: 1.5rem;
+  width: 33%;
 }
 
 .about-me {
