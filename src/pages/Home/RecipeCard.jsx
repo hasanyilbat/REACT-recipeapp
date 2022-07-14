@@ -12,7 +12,7 @@ const RecipeCard = ({ data }) => {
       <div className="card" style={{ width: "18rem", height: "30rem" }}>
         <img src={image} className="card-img-top" alt="..." />
         <div className="card-body">
-          <h5 className="card-title" style={{ height: "6rem" }}>
+          <h5 className="card-title text-center" style={{ height: "6rem" }}>
             {label}
           </h5>
           <button
