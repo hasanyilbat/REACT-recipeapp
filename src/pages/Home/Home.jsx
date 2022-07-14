@@ -59,8 +59,9 @@ const Home = () => {
           </select>
         </form>
       </div>
-
-      {data && data.map((food) => <RecipeCard data={food} />)}
+      <div className="d-flex gap-4 flex-row flex-wrap justify-content-center mt-5">
+        {data && data.map((food) => <RecipeCard data={food} />)}
+      </div>
     </div>
   );
 };
