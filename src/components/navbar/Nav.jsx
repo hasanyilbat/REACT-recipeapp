@@ -6,7 +6,7 @@ const Nav = () => {
     <div>
       <nav className="navbar navbar-light bg-light d-flex justify-content-between">
         <div className="navbar-brand ">
-          <Link to="/home" style={{ fontSize: "2rem" }}>
+          <Link to="/home" className="navbar-link">
             <span className="text-dark">&lt;HASAN/&gt;</span> RECIPE{" "}
           </Link>
         </div>

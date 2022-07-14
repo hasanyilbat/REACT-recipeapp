@@ -16,7 +16,7 @@ const about = () => {
           </p>
           <div>
             <p> I'm Hasan.</p>
-            <p>I'm currently learning Full-Stack Devolopment Languages.</p>
+            <p>I'm currently learning Full-Stack Development Languages.</p>
             <p>I've already knows JS, ReactJS, Python, AWS Services</p>
             <p>Send email: hasan.yilbat@gmail.com</p>
           </div>

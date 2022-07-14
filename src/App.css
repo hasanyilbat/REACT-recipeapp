@@ -97,7 +97,7 @@
 }
 
 .about-me img {
-  width: 309px;
+  width: 288px;
   margin-bottom: 2rem;
 }
 
@@ -128,4 +128,8 @@
   padding: 1rem;
   background-color: rgb(124, 216, 124) !important;
   height: 69.85vh;
+}
+
+.navbar-link {
+  font-size: 2rem;
 }
